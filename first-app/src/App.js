@@ -1,8 +1,15 @@
-import React from "react";
+import React, {Component} from "react";
 
-class App extends React.Component {
+class App extends Component {
     render(){
-        return <h1>Amir</h1>
+        return (
+            <>
+            <div>
+                <h1>Amir</h1>
+            </div>
+            <p>Hellow world</p>
+            </>
+        )
     }
 }
 
