@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class UserC extends Component {
     constructor() {
@@ -13,7 +14,7 @@ class UserC extends Component {
         const {lastName , job} = this.props;
         return (
             <div>
-                <p>I am {name} {lastName} and my age is {age}</p>
+                <p className= 'header'>I am {name} {lastName} and my age is {age}</p>
                 <p> my job's {job} </p>
             </div>
         );
