@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 // import Car from "./Car";
+import UserC from "./UserC";
+import UserF from "./UserF";
 
 // class App extends Component {
 //     number= 10;
@@ -26,9 +28,9 @@ class App extends Component {
         //     name: "Benz",
         //     speed: 250
         // }
-        this.state = {
-            number: 0,
-        }
+        // this.state = {
+        //     number: 0,
+        // }
     }
 
     // changeHandler = () => {
@@ -38,22 +40,22 @@ class App extends Component {
     //     })
     // }
 
-    upOne = () => {
-        // this.setState({
-        //     number: this.state.number + 1,
-        // }, () => { console.log(`new number: ${this.state.number}`)})
-        // console.log(this.state.number);
-        this.setState((prevState) => ({
-            number: prevState.number +1,
-        }))
-        console.log(this);
-    }
+    // upOne = () => {
+    //     // this.setState({
+    //     //     number: this.state.number + 1,
+    //     // }, () => { console.log(`new number: ${this.state.number}`)})
+    //     // console.log(this.state.number);
+    //     this.setState((prevState) => ({
+    //         number: prevState.number +1,
+    //     }))
+    //     console.log(this);
+    // }
 
-    upThree = () => {
-        this.upOne();
-        this.upOne();
-        this.upOne();
-    }
+    // upThree = () => {
+    //     this.upOne();
+    //     this.upOne();
+    //     this.upOne();
+    // }
 
     render () {
         return(
@@ -61,10 +63,12 @@ class App extends Component {
                 {/* <h1>My cars:</h1> */}
                 {/* <p>my first car is {this.state.name} and highest speed is {this.state.speed}</p> */}
                 {/* <button onClick= {this.changeHandler}>Change state</button> */}
-                <h1>now number is: {this.state.number}</h1>
-                <button onClick= {this.upOne}>Up 1</button>
-                <button onClick= {this.upThree}>Up 3</button>
-
+                {/* <h1>now number is: {this.state.number}</h1> */}
+                {/* <button onClick= {this.upOne}>Up 1</button> */}
+                {/* <button onClick= {this.upThree}>Up 3</button> */}
+                <UserC lastName= "Rasooli" job="programmer"/>
+                <br/>
+                <UserF name= "Jafar" lastName= "Gholi" job= "employeer" age= "45" />
 
             </div>
         )
