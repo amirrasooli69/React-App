@@ -3,7 +3,6 @@ import React, {Component} from "react";
 import UserC from "./UserC";
 import UserF from "./UserF";
 import './App.css'
-
 // class App extends Component {
 //     number= 10;
 //     render(){
@@ -23,16 +22,16 @@ import './App.css'
 // }
 
 class App extends Component {
-    constructor() {
-        super();
-        // this.state = {
-        //     name: "Benz",
-        //     speed: 250
-        // }
-        // this.state = {
-        //     number: 0,
-        // }
-    }
+    // constructor() {
+    //     super();
+    //     // this.state = {
+    //     //     name: "Benz",
+    //     //     speed: 250
+    //     // }
+    //     // this.state = {
+    //     //     number: 0,
+    //     // }
+    // }
 
     // changeHandler = () => {
     //     this.setState({
@@ -70,6 +69,7 @@ class App extends Component {
                 <UserC lastName= "Rasooli" job="programmer"/>
                 <br/>
                 <UserF name= "Jafar" lastName= "Gholi" job= "employeer" age= "45" />
+                
 
             </div>
         )
