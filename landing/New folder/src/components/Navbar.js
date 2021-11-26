@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 import logo from '../images/logo.jpg';
@@ -10,9 +9,9 @@ const Navbar = () => {
             <header className={styles.header}>
                 <div className={styles.listContainer}>
                     <ul className={styles.list}>
-                        <li><Link to='/'>Home page</Link></li>
-                        <li><Link to='/products'>Products</Link></li>
-                        <li><Link to='/'>About Us</Link></li>
+                        <li>Home page</li>
+                        <li>Products</li>
+                        <li>About Us</li>
                     </ul>
                 </div>
                 <div className={styles.logo}>

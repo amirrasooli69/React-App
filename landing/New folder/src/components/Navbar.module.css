@@ -29,11 +29,6 @@
     font-weight: bold;
 }
 
-.list li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.list li a:hover {
-    color: rgb(67, 65, 68);
+.list li:hover {
+    color: indigo;
 }
