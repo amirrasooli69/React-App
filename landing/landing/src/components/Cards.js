@@ -31,7 +31,14 @@ class Cards extends Component {
                 <Card image={Iphone12} name='Iphoen12' cost='799 $'/>
                 <Card image={Iphone13} name='Iphoen13' cost='899 $'/>
                 <Card image={s21} name='S21' cost='600 $'/> */}
-                {this.state.phoneData.map(phone => <Card key={phone.id} image={phone.image} name={phone.name} cost={phone.cost}/>)}
+                {this.state.phoneData.map(phone => 
+                <Card 
+                    key={phone.id} 
+                    image={phone.image} 
+                    name={phone.name} 
+                    cost={phone.cost}
+                    id={phone.id}
+                />)}
             </div>
         );
     }
