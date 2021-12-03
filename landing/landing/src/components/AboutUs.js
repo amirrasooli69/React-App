@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-class AboutUs extends Component {
-    render() {
-        return (
-            <div>
-                About Us
-            </div>
-        );
+const  AboutUs = () => {
+    const navigate = useNavigate();
+    const clickHandler = () => {
+        navigate('/');
     }
+    return (
+        <div>
+            <h1>About Us</h1>
+            <button onClick={clickHandler}>Go Home</button>
+        </div>
+    );
+    
 }
 
 export default AboutUs;
