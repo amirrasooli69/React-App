@@ -3,6 +3,7 @@
 # dependencies
 /shopping/shopping/node_modules
 landing/node_modules
+/t1
 /.pnp
 .pnp.js
 

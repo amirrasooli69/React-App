@@ -19,7 +19,7 @@ class App extends Component {
           <Route path='/' element={<Landing />} />
           <Route path='/products' element={<Products />} />
           <Route path='/products/:id' element={<DetailsPage />} />
-          <Route path='/products/us' element={<AboutUs />} />
+          <Route path='/aboutus/*' element={<AboutUs />} />
           <Route path='/notfound' element={<NotFound />} />
           <Route path='/*' element={<Navigate to='/notfound'/>} />
         </Routes>
