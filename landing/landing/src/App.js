@@ -19,9 +19,13 @@ class App extends Component {
           <Route path='/' element={<Landing />} />
           <Route path='/products' element={<Products />} />
           <Route path='/products/:id' element={<DetailsPage />} />
-          <Route path='/aboutus/*' element={<AboutUs />} />
+          <Route path='/aboutus/*' element={<AboutUs />} > 
+            <Route path='programmer' element={<h1>Programmer page</h1>} />
+            <Route path='driver' element={<h1>Driver page</h1>} />
+          </Route>
           <Route path='/notfound' element={<NotFound />} />
-          <Route path='/*' element={<Navigate to='/notfound'/>} />
+          {/* baraye inke masire alaki dad */}
+          <Route path='/*' element={<Navigate to='/notfound'/>} /> 
         </Routes>
         <Footer />
       </div>  

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { useNavigate , Link , Routes , Route} from 'react-router-dom';
+import React from 'react';
+import { useNavigate , Link , Outlet} from 'react-router-dom';
 // import Landing from './Landing';
 
 const  AboutUs = () => {
@@ -16,11 +16,7 @@ const  AboutUs = () => {
                 <li><Link to='driver'>driver</Link></li>
                 {/* <li><Link to='home'>home</Link></li> */}
             </ul>
-            <Routes>
-                <Route path='programmer' element={<h1>Programmer page</h1>} />
-                <Route path='driver' element={<h1>Driver page</h1>} />
-                {/* <Route path='home' element={<Landing />} /> */}
-            </Routes>
+            <Outlet />
         </div>
     );
     
