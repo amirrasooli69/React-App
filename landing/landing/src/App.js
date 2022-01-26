@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import {Route , Routes , Navigate } from 'react-router-dom';
+import {Route , Routes , Redirect, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import './index.css';
 import Footer from './components/Footer';
@@ -15,18 +15,15 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/products/:id' element={<DetailsPage />} />
-          <Route path='/aboutus/*' element={<AboutUs />} > 
-            <Route path='programmer' element={<h1>Programmer page</h1>} />
-            <Route path='driver' element={<h1>Driver page</h1>} />
-          </Route>
-          <Route path='/notfound' element={<NotFound />} />
+        <Switch>
+          <Route exact path='/' component={Landing } />
+          <Route path='/products' component={Products } />
+          <Route path='/products/:id' component={DetailsPage} />
+          <Route path='/aboutus/' component={AboutUs} /> 
+          <Route path='/notfound' component={NotFound } />
           {/* baraye inke masire alaki dad */}
-          <Route path='/*' element={<Navigate to='/notfound'/>} /> 
-        </Routes>
+          <Redirect to='/notfound' /> 
+        </Switch>
         <Footer />
       </div>  
     );
