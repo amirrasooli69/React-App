@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import {Route , Routes , Redirect, Switch } from 'react-router-dom';
+import {Route  , Redirect, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import './index.css';
 import Footer from './components/Footer';
