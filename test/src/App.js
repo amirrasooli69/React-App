@@ -1,13 +1,15 @@
-import React , {useState} from 'react';
-import Logger from './components/Logger';
+import React from 'react';
+import Data2 from './components/Data2'
 
+export const AgeContex = React.createContext();
 const App = () => {
-  const [isShown , setIsShown] = useState(false);
-
+  
   return (
     <div>
-        {isShown && <Logger />}
-
+      <AgeContex.Provider value={31}>
+        
+        <Data2 />
+      </AgeContex.Provider>
     </div>
   );
 };
