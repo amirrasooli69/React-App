@@ -26,6 +26,7 @@ const func = (current , action) => {
 const Data = () => {
     
     const [number , dispatch] = useReducer(func , avalie)
+    const [number2 , dispatch2] = useReducer(func , avalie);
     return (
         <div>
             <h2>{number.num1}</h2>
@@ -33,12 +34,10 @@ const Data = () => {
             <button onClick={() => dispatch({type :'Reset'})}>Reset</button>
             <button onClick={() => dispatch({type:'Down' , value:3})}>Down</button>
             <hr />
-
-            <h2>{number.num2}</h2>
-            <button onClick={() => dispatch({type:'Up2' , value: 1})}>Up</button>
-            <button onClick={() => dispatch({type :'Reset'})}>Reset</button>
-            <button onClick={() => dispatch({type:'Down2' , value: 1})}>Down</button>
-
+            <h2>{number2.num1}</h2>
+            <button onClick={() => dispatch2({type:'Up' , value:3})}>Up</button>
+            <button onClick={() => dispatch2({type :'Reset'})}>Reset</button>
+            <button onClick={() => dispatch2({type:'Down' , value:3})}>Down</button>
         </div>
     );
 };
